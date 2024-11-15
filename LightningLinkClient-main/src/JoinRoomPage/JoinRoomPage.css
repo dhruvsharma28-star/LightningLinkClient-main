@@ -1,0 +1,252 @@
+.join_room_page_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color:#7268a6;
+ 
+}
+
+.join_room_title {
+  /* font-size: 36px;
+  font-weight: 700;
+  text-align: center; */
+  text-align:center; font-size:4rem; text-transform:uppercase; color:#222; letter-spacing:1px;
+  font-family:"Playfair Display", serif; font-weight:400;
+  
+}
+
+.join_room_page_panel {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.join_room_inputs_container {
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  /* margin-top: 1rem; */
+  
+}
+/* .join_room_button {
+  margin-right: 15px;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #cfff80;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  box-shadow: 10px 11px 49px -24px rgba(0, 0, 0, 0.75);
+}
+
+.create_room_button {
+  border: 1px solid #000;
+  background-color: #cfff80;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  box-shadow: 10px 11px 49px -24px rgba(0, 0, 0, 0.75);
+}
+
+.create_room_button:hover {
+  background-color: #000;
+  color: #cfff80;
+  box-shadow: none;
+} */
+
+.join_room_buttons_container {
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+.join_room_cancel_button {
+  border: 1px solid #000;
+  background-color: #cfff80;
+  color: #000;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  box-shadow: 10px 11px 49px -24px rgba(0, 0, 0, 0.75);
+}
+
+.join_room_cancel_button:hover {
+  background-color: #000;
+  color: #cfff80;
+  border: 1px solid #000;
+  box-shadow: none;
+}
+
+.join_room_success_button {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #cfff80;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  box-shadow: 10px 11px 49px -24px rgba(0, 0, 0, 0.75);
+}
+
+.join_room_success_button:hover {
+  background-color: #cfff80;
+  border: 1px solid #000;
+  color: #000;
+  box-shadow: none;
+} */
+
+.join_room_input::placeholder {
+  color: #000;
+  font-family:"Playfair Display", serif;
+}
+
+.join_room_input {
+  /* border-radius: 12px; */
+  /* border: 1px solid #000; */
+  background-color: #b6c3c7 !important;
+  width: 18vw;
+  color: #000;
+  height: 3.5vh;
+  padding: 0px 0.5rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.join_room_input:focus {
+  border: 0px !important;
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px !important;
+}
+
+.error_message_container {
+  display: flex;
+  height: 50px;
+  margin-left: 35px;
+}
+
+.error_message_paragraph {
+  color: red;
+}
+
+.loading_overlay_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #cfff80;
+}
+
+.loading_overlay_loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #0052c9; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkbox_container {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-left:2.5rem;
+  align-items: center;
+  font-family:"Playfair Display", serif;
+  
+}
+
+.checkbox_connection {
+  width: 25px;
+  height: 25px;
+  background: #b6c3c7 !important;
+  /* border: 1px solid #cfff80; */
+  /* border-radius: 8px; */
+  backdrop-filter: blur(80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox_container_paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.checkbox_image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.room_button {
+  align-self: center;
+  background-color: #b6c3c7 !important;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #000 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family:"Playfair Display", serif;
+  font-size: 1.4rem;
+  line-height: 23px;
+  margin:0rem 1.5rem;
+  outline: none;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.room_button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.room_button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.room_button:disabled,
+.room_button[disabled]{
+  border: 1px solid #999999;
+  background-color: #000;
+  color: #666666;
+}
